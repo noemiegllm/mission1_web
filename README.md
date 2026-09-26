@@ -1,7 +1,7 @@
 # Mission 1 - The Number Oracle
 
 This is a small game that runs entirely in a web browser. The player must guess a secret number by typing their guesses. For each attempt, the Oracle provides a clue.
-
+To access to the game : https://noemiegllm.github.io/mission1_web/
 ---
 
 ## AI Usage
