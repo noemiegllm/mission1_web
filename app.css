@@ -31,6 +31,14 @@ h2#oracleAnswer {
   margin-top:0 ;
 }
 
+h2#oracleAnswer.error{
+  color: #ff0000;
+}
+
+h2#oracleAnswer.success{
+  color: #03e529;
+}
+
 p {
   color: #6c757d;
   line-height: 1;
