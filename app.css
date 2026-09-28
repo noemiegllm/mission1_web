@@ -21,6 +21,11 @@ article, aside {
   text-align: center;
 }
 
+/*ScoreBoard*/
+aside {
+  border-top: solid #4f46e5;
+}
+
 h1 {
   font-size: 1.5rem;
 }
@@ -52,7 +57,7 @@ input#inputGuess {
   text-align: center;
 }
 
-button#submitBtn {
+button#submitBtn, button#restartBtn {
   padding: 10px 20px;
   font-size: 1rem;
   background-color: #4f46e5;
@@ -69,7 +74,13 @@ button#submitBtn:disabled {
   cursor: not-allowed;
 }
 
-/*ScoreBoard*/
-aside {
-  border-top: solid #4f46e5;
+button#restartBtn {
+
+  background-color: white;
+  color: #4f46e5;
+  border: 1px solid #4f46e5;
+}
+
+button#restartBtn:hover {
+  background-color: #eeedf7;
 }
