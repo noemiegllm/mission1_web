@@ -12,7 +12,7 @@ let pastTries = [];
 inputGuess.value = "";
 
 /*** FUNCTION ***/
-function OracleAnswer(secretNumber, playerNumber){
+function OracleIndication(secretNumber, playerNumber){
     inputGuess.value = "";
     if(playerNumber === secretNumber){
         frontAnswer("success");
@@ -43,14 +43,14 @@ function frontAnswer(result){
 submitBtn.addEventListener("click", () => {
     playerGuess = Number(inputGuess.value);
 
-    if(1>playerGuess || 100<playerGuess || isNaN(playerGuess)){
+    if(playerGuess < 1 || playerGuess > 100|| isNaN(playerGuess)){
         frontAnswer("error");
         oracleAnswer.textContent = "Enter a correct value (number between 1 & 100)";
     }else{
         triesCounter++;
         pastTries.push(playerGuess);
         scoreBoard.textContent= pastTries.join(", ");
-        OracleAnswer(secret, playerGuess);
+        OracleIndication(secret, playerGuess);
     }
 });
 
